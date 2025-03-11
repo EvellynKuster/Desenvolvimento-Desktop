@@ -30,33 +30,39 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblIdade = new System.Windows.Forms.Label();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.lblAltura = new System.Windows.Forms.Label();
+            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
+            this.lblIMC = new System.Windows.Forms.Label();
+            this.lblMaiorIdade = new System.Windows.Forms.Label();
             this.chkFeminino = new System.Windows.Forms.CheckBox();
             this.chkMasculino = new System.Windows.Forms.CheckBox();
             this.chkCrianca = new System.Windows.Forms.CheckBox();
             this.chkAdulto = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblIMC = new System.Windows.Forms.Label();
-            this.txtIdade = new System.Windows.Forms.TextBox();
-            this.txtPeso = new System.Windows.Forms.TextBox();
-            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.cmbIdade = new System.Windows.Forms.ComboBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblResultadoImc = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FloralWhite;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lblResultadoImc);
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnCalcular);
+            this.panel1.Controls.Add(this.cmbIdade);
+            this.panel1.Controls.Add(this.lblIdade);
+            this.panel1.Controls.Add(this.lblPeso);
+            this.panel1.Controls.Add(this.lblAltura);
             this.panel1.Controls.Add(this.txtAltura);
             this.panel1.Controls.Add(this.txtPeso);
-            this.panel1.Controls.Add(this.txtIdade);
             this.panel1.Controls.Add(this.lblIMC);
-            this.panel1.Controls.Add(this.lblIdade);
+            this.panel1.Controls.Add(this.lblMaiorIdade);
             this.panel1.Controls.Add(this.chkFeminino);
             this.panel1.Controls.Add(this.chkMasculino);
             this.panel1.Controls.Add(this.chkCrianca);
@@ -71,14 +77,70 @@
             // lblIdade
             // 
             this.lblIdade.AutoSize = true;
-            this.lblIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdade.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblIdade.Location = new System.Drawing.Point(19, 82);
+            this.lblIdade.Location = new System.Drawing.Point(343, 158);
             this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(121, 15);
-            this.lblIdade.TabIndex = 6;
-            this.lblIdade.Text = "Acima de 19 anos";
-            this.lblIdade.Click += new System.EventHandler(this.lblIdade_Click);
+            this.lblIdade.Size = new System.Drawing.Size(39, 13);
+            this.lblIdade.TabIndex = 15;
+            this.lblIdade.Text = "Idade";
+            // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeso.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblPeso.Location = new System.Drawing.Point(22, 158);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(62, 13);
+            this.lblPeso.TabIndex = 13;
+            this.lblPeso.Text = "Peso (Kg)";
+            // 
+            // lblAltura
+            // 
+            this.lblAltura.AutoSize = true;
+            this.lblAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAltura.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblAltura.Location = new System.Drawing.Point(184, 158);
+            this.lblAltura.Name = "lblAltura";
+            this.lblAltura.Size = new System.Drawing.Size(69, 13);
+            this.lblAltura.TabIndex = 12;
+            this.lblAltura.Text = "Altura (Cm)";
+            // 
+            // txtAltura
+            // 
+            this.txtAltura.Location = new System.Drawing.Point(187, 174);
+            this.txtAltura.Name = "txtAltura";
+            this.txtAltura.Size = new System.Drawing.Size(100, 20);
+            this.txtAltura.TabIndex = 10;
+            // 
+            // txtPeso
+            // 
+            this.txtPeso.Location = new System.Drawing.Point(25, 174);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(100, 20);
+            this.txtPeso.TabIndex = 9;
+            // 
+            // lblIMC
+            // 
+            this.lblIMC.AutoSize = true;
+            this.lblIMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIMC.Location = new System.Drawing.Point(22, 132);
+            this.lblIMC.Name = "lblIMC";
+            this.lblIMC.Size = new System.Drawing.Size(116, 16);
+            this.lblIMC.TabIndex = 7;
+            this.lblIMC.Text = "IMC para adulto";
+            // 
+            // lblMaiorIdade
+            // 
+            this.lblMaiorIdade.AutoSize = true;
+            this.lblMaiorIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaiorIdade.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblMaiorIdade.Location = new System.Drawing.Point(19, 82);
+            this.lblMaiorIdade.Name = "lblMaiorIdade";
+            this.lblMaiorIdade.Size = new System.Drawing.Size(121, 15);
+            this.lblMaiorIdade.TabIndex = 6;
+            this.lblMaiorIdade.Text = "Acima de 19 anos";
             // 
             // chkFeminino
             // 
@@ -96,8 +158,6 @@
             // chkMasculino
             // 
             this.chkMasculino.AutoSize = true;
-            this.chkMasculino.Checked = true;
-            this.chkMasculino.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkMasculino.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.chkMasculino.Location = new System.Drawing.Point(393, 44);
@@ -124,8 +184,6 @@
             // chkAdulto
             // 
             this.chkAdulto.AutoSize = true;
-            this.chkAdulto.Checked = true;
-            this.chkAdulto.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkAdulto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAdulto.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.chkAdulto.Location = new System.Drawing.Point(22, 44);
@@ -156,69 +214,66 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Selecione:";
             // 
-            // lblIMC
+            // cmbIdade
             // 
-            this.lblIMC.AutoSize = true;
-            this.lblIMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIMC.Location = new System.Drawing.Point(22, 132);
-            this.lblIMC.Name = "lblIMC";
-            this.lblIMC.Size = new System.Drawing.Size(116, 16);
-            this.lblIMC.TabIndex = 7;
-            this.lblIMC.Text = "IMC para adulto";
+            this.cmbIdade.FormattingEnabled = true;
+            this.cmbIdade.Items.AddRange(new object[] {
+            "1 ano",
+            "2 anos",
+            "3 anos",
+            "4 anos",
+            "5 anos",
+            "6 anos",
+            "7 anos",
+            "8 anos",
+            "9 anos",
+            "10 anos",
+            "11 anos",
+            "12 anos",
+            "13 anos",
+            "14 anos",
+            "15 anos",
+            "16 anos",
+            "17 anos",
+            "18 anos"});
+            this.cmbIdade.Location = new System.Drawing.Point(346, 174);
+            this.cmbIdade.Name = "cmbIdade";
+            this.cmbIdade.Size = new System.Drawing.Size(121, 21);
+            this.cmbIdade.TabIndex = 16;
             // 
-            // txtIdade
+            // btnCalcular
             // 
-            this.txtIdade.Location = new System.Drawing.Point(25, 183);
-            this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(100, 20);
-            this.txtIdade.TabIndex = 8;
-            // 
-            // txtPeso
-            // 
-            this.txtPeso.Location = new System.Drawing.Point(25, 232);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(100, 20);
-            this.txtPeso.TabIndex = 9;
-            // 
-            // txtAltura
-            // 
-            this.txtAltura.Location = new System.Drawing.Point(28, 289);
-            this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(100, 20);
-            this.txtAltura.TabIndex = 10;
+            this.btnCalcular.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnCalcular.Location = new System.Drawing.Point(25, 209);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(132, 37);
+            this.btnCalcular.TabIndex = 17;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(25, 167);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 314);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Idade";
+            this.label3.Size = new System.Drawing.Size(82, 16);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Resulatdo:";
             // 
-            // label4
+            // lblResultadoImc
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkGray;
-            this.label4.Location = new System.Drawing.Point(25, 273);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Altura";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(25, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Peso";
+            this.lblResultadoImc.AutoSize = true;
+            this.lblResultadoImc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoImc.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblResultadoImc.Location = new System.Drawing.Point(22, 330);
+            this.lblResultadoImc.Name = "lblResultadoImc";
+            this.lblResultadoImc.Size = new System.Drawing.Size(11, 16);
+            this.lblResultadoImc.TabIndex = 19;
+            this.lblResultadoImc.Text = ".";
             // 
             // FrmCalculadoraIMC
             // 
@@ -244,13 +299,16 @@
         private System.Windows.Forms.CheckBox chkFeminino;
         private System.Windows.Forms.CheckBox chkMasculino;
         private System.Windows.Forms.CheckBox chkCrianca;
-        private System.Windows.Forms.Label lblIdade;
+        private System.Windows.Forms.Label lblMaiorIdade;
         private System.Windows.Forms.Label lblIMC;
         private System.Windows.Forms.TextBox txtAltura;
         private System.Windows.Forms.TextBox txtPeso;
-        private System.Windows.Forms.TextBox txtIdade;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label lblAltura;
+        private System.Windows.Forms.Label lblIdade;
+        private System.Windows.Forms.ComboBox cmbIdade;
+        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblResultadoImc;
     }
 }
