@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picboxImc = new System.Windows.Forms.PictureBox();
             this.lblResultadoImc = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.chkAdulto = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.picboxImc = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxImc)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 0;
+            // 
+            // picboxImc
+            // 
+            this.picboxImc.Location = new System.Drawing.Point(519, 101);
+            this.picboxImc.Name = "picboxImc";
+            this.picboxImc.Size = new System.Drawing.Size(214, 325);
+            this.picboxImc.TabIndex = 20;
+            this.picboxImc.TabStop = false;
             // 
             // lblResultadoImc
             // 
@@ -115,24 +123,10 @@
             // 
             this.cmbIdade.FormattingEnabled = true;
             this.cmbIdade.Items.AddRange(new object[] {
-            "1 ano",
-            "2 anos",
-            "3 anos",
-            "4 anos",
-            "5 anos",
-            "6 anos",
-            "7 anos",
-            "8 anos",
-            "9 anos",
-            "10 anos",
-            "11 anos",
-            "12 anos",
-            "13 anos",
-            "14 anos",
-            "15 anos",
-            "16 anos",
-            "17 anos",
-            "18 anos"});
+            "1 a 5 anos",
+            "6 a 10 anos",
+            "11 a 15 anos",
+            "16 a 18 anos"});
             this.cmbIdade.Location = new System.Drawing.Point(346, 174);
             this.cmbIdade.Name = "cmbIdade";
             this.cmbIdade.Size = new System.Drawing.Size(121, 21);
@@ -167,9 +161,9 @@
             this.lblAltura.ForeColor = System.Drawing.Color.DarkGray;
             this.lblAltura.Location = new System.Drawing.Point(184, 158);
             this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(69, 13);
+            this.lblAltura.Size = new System.Drawing.Size(61, 13);
             this.lblAltura.TabIndex = 12;
-            this.lblAltura.Text = "Altura (Cm)";
+            this.lblAltura.Text = "Altura (m)";
             // 
             // txtAltura
             // 
@@ -217,7 +211,7 @@
             this.chkFeminino.TabIndex = 5;
             this.chkFeminino.Text = "Feminino";
             this.chkFeminino.UseVisualStyleBackColor = true;
-            this.chkFeminino.CheckedChanged += new System.EventHandler(this.chkFeminino_CheckedChanged);
+            this.chkFeminino.Click += new System.EventHandler(this.chkFeminino_CheckedChanged);
             // 
             // chkMasculino
             // 
@@ -230,7 +224,7 @@
             this.chkMasculino.TabIndex = 4;
             this.chkMasculino.Text = "Masculino";
             this.chkMasculino.UseVisualStyleBackColor = true;
-            this.chkMasculino.CheckedChanged += new System.EventHandler(this.chkMasculino_CheckedChanged);
+            this.chkMasculino.Click += new System.EventHandler(this.chkMasculino_CheckedChanged);
             // 
             // chkCrianca
             // 
@@ -278,14 +272,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Selecione:";
             // 
-            // picboxImc
-            // 
-            this.picboxImc.Location = new System.Drawing.Point(535, 132);
-            this.picboxImc.Name = "picboxImc";
-            this.picboxImc.Size = new System.Drawing.Size(224, 275);
-            this.picboxImc.TabIndex = 20;
-            this.picboxImc.TabStop = false;
-            // 
             // FrmCalculadoraIMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +280,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "FrmCalculadoraIMC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCalculadoraIMC";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
