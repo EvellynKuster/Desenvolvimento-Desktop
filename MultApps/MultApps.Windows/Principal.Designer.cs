@@ -55,7 +55,7 @@
             // MenuCalculadoraImc
             // 
             this.MenuCalculadoraImc.Name = "MenuCalculadoraImc";
-            this.MenuCalculadoraImc.Size = new System.Drawing.Size(180, 22);
+            this.MenuCalculadoraImc.Size = new System.Drawing.Size(178, 22);
             this.MenuCalculadoraImc.Text = "Calculadora de IMC";
             this.MenuCalculadoraImc.Click += new System.EventHandler(this.MenuCalculadoraImc_Click);
             // 
@@ -71,6 +71,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Shown += new System.EventHandler(this.Principal_Shown);
             this.menuStripPrincipal.ResumeLayout(false);
             this.menuStripPrincipal.PerformLayout();
             this.ResumeLayout(false);
