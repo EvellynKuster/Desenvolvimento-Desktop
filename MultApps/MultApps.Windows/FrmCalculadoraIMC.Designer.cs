@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picboxImc = new System.Windows.Forms.PictureBox();
             this.lblResultadoImc = new System.Windows.Forms.Label();
@@ -47,8 +48,10 @@
             this.chkAdulto = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxImc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -272,6 +275,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Selecione:";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmCalculadoraIMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,6 +292,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxImc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -310,5 +318,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblResultadoImc;
         private System.Windows.Forms.PictureBox picboxImc;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
