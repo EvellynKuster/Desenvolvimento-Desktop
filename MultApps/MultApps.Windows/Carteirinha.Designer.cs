@@ -38,7 +38,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.panelImagem = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -46,9 +45,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.picBoxImagem = new System.Windows.Forms.PictureBox();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelCor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxImagem)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,13 +95,14 @@
             // panelCor
             // 
             this.panelCor.BackColor = System.Drawing.Color.FloralWhite;
+            this.panelCor.Controls.Add(this.lblStatus);
+            this.panelCor.Controls.Add(this.picBoxImagem);
             this.panelCor.Controls.Add(this.lblIdade);
             this.panelCor.Controls.Add(this.lblCpf);
             this.panelCor.Controls.Add(this.lblNome);
             this.panelCor.Controls.Add(this.label5);
             this.panelCor.Controls.Add(this.label6);
             this.panelCor.Controls.Add(this.label7);
-            this.panelCor.Controls.Add(this.panelImagem);
             this.panelCor.Location = new System.Drawing.Point(3, 3);
             this.panelCor.Name = "panelCor";
             this.panelCor.Size = new System.Drawing.Size(256, 329);
@@ -168,14 +171,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Nome :";
             // 
-            // panelImagem
-            // 
-            this.panelImagem.BackColor = System.Drawing.Color.FloralWhite;
-            this.panelImagem.Location = new System.Drawing.Point(35, 12);
-            this.panelImagem.Name = "panelImagem";
-            this.panelImagem.Size = new System.Drawing.Size(181, 143);
-            this.panelImagem.TabIndex = 0;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -238,6 +233,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Gerador de carteirinha de acesso ao parque";
             // 
+            // picBoxImagem
+            // 
+            this.picBoxImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picBoxImagem.Location = new System.Drawing.Point(35, 13);
+            this.picBoxImagem.Name = "picBoxImagem";
+            this.picBoxImagem.Size = new System.Drawing.Size(187, 138);
+            this.picBoxImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxImagem.TabIndex = 9;
+            this.picBoxImagem.TabStop = false;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.Color.Black;
+            this.lblStatus.Location = new System.Drawing.Point(186, 304);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(10, 15);
+            this.lblStatus.TabIndex = 15;
+            this.lblStatus.Text = ".";
+            // 
             // Carteirinha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,6 +269,7 @@
             this.panel2.ResumeLayout(false);
             this.panelCor.ResumeLayout(false);
             this.panelCor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxImagem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,12 +287,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelCor;
-        private System.Windows.Forms.Panel panelImagem;
         private System.Windows.Forms.Label lblIdade;
         private System.Windows.Forms.Label lblCpf;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox picBoxImagem;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
