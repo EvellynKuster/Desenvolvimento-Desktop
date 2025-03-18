@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
+            this.btnAposentadoria = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtContribuicao = new System.Windows.Forms.TextBox();
             this.cbSexo = new System.Windows.Forms.ComboBox();
@@ -37,9 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnAposentadoria = new System.Windows.Forms.Button();
-            this.lblResultado = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,40 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(775, 425);
             this.panel1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(18, 318);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 18);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Resultado :";
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblResultado.Location = new System.Drawing.Point(18, 345);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(11, 16);
+            this.lblResultado.TabIndex = 9;
+            this.lblResultado.Text = ".";
+            // 
+            // btnAposentadoria
+            // 
+            this.btnAposentadoria.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnAposentadoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAposentadoria.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnAposentadoria.Location = new System.Drawing.Point(485, 178);
+            this.btnAposentadoria.Name = "btnAposentadoria";
+            this.btnAposentadoria.Size = new System.Drawing.Size(121, 58);
+            this.btnAposentadoria.TabIndex = 8;
+            this.btnAposentadoria.Text = "Calcular";
+            this.btnAposentadoria.UseVisualStyleBackColor = false;
+            this.btnAposentadoria.Click += new System.EventHandler(this.btnAposentadoria_Click);
             // 
             // label5
             // 
@@ -138,40 +172,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(123, 20);
             this.dateTimePicker1.TabIndex = 0;
             // 
-            // btnAposentadoria
-            // 
-            this.btnAposentadoria.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnAposentadoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAposentadoria.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnAposentadoria.Location = new System.Drawing.Point(485, 178);
-            this.btnAposentadoria.Name = "btnAposentadoria";
-            this.btnAposentadoria.Size = new System.Drawing.Size(121, 58);
-            this.btnAposentadoria.TabIndex = 8;
-            this.btnAposentadoria.Text = "Calcular";
-            this.btnAposentadoria.UseVisualStyleBackColor = false;
-            this.btnAposentadoria.Click += new System.EventHandler(this.btnAposentadoria_Click);
-            // 
-            // lblResultado
-            // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lblResultado.Location = new System.Drawing.Point(18, 345);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(11, 16);
-            this.lblResultado.TabIndex = 9;
-            this.lblResultado.Text = ".";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 318);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 18);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Resultado :";
-            // 
             // CalculadoraAposentadoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +180,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "CalculadoraAposentadoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalculadoraAposentadoria";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

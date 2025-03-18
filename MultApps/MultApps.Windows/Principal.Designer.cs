@@ -32,13 +32,16 @@
             this.calculadorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuCalculadoraImc = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraDeAposentadoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geradoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geradorDeCarteirinhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripPrincipal
             // 
             this.menuStripPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calculadorasToolStripMenuItem});
+            this.calculadorasToolStripMenuItem,
+            this.geradoresToolStripMenuItem});
             this.menuStripPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipal.Name = "menuStripPrincipal";
             this.menuStripPrincipal.Size = new System.Drawing.Size(800, 24);
@@ -68,6 +71,21 @@
             this.calculadoraDeAposentadoriaToolStripMenuItem.Text = "Calculadora de aposentadoria";
             this.calculadoraDeAposentadoriaToolStripMenuItem.Click += new System.EventHandler(this.calculadoraDeAposentadoriaToolStripMenuItem_Click);
             // 
+            // geradoresToolStripMenuItem
+            // 
+            this.geradoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.geradorDeCarteirinhaToolStripMenuItem});
+            this.geradoresToolStripMenuItem.Name = "geradoresToolStripMenuItem";
+            this.geradoresToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.geradoresToolStripMenuItem.Text = "Geradores";
+            // 
+            // geradorDeCarteirinhaToolStripMenuItem
+            // 
+            this.geradorDeCarteirinhaToolStripMenuItem.Name = "geradorDeCarteirinhaToolStripMenuItem";
+            this.geradorDeCarteirinhaToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.geradorDeCarteirinhaToolStripMenuItem.Text = "Gerador de carteirinha";
+            this.geradorDeCarteirinhaToolStripMenuItem.Click += new System.EventHandler(this.geradorDeCarteirinhaToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,5 +112,7 @@
         private System.Windows.Forms.ToolStripMenuItem calculadorasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuCalculadoraImc;
         private System.Windows.Forms.ToolStripMenuItem calculadoraDeAposentadoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem geradoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem geradorDeCarteirinhaToolStripMenuItem;
     }
 }
