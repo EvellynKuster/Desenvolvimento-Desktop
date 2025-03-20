@@ -34,6 +34,8 @@
             this.calculadoraDeAposentadoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.geradoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.geradorDeCarteirinhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lojasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lojaDeAçaíToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +43,8 @@
             // 
             this.menuStripPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculadorasToolStripMenuItem,
-            this.geradoresToolStripMenuItem});
+            this.geradoresToolStripMenuItem,
+            this.lojasToolStripMenuItem});
             this.menuStripPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipal.Name = "menuStripPrincipal";
             this.menuStripPrincipal.Size = new System.Drawing.Size(800, 24);
@@ -86,6 +89,21 @@
             this.geradorDeCarteirinhaToolStripMenuItem.Text = "Gerador de carteirinha";
             this.geradorDeCarteirinhaToolStripMenuItem.Click += new System.EventHandler(this.geradorDeCarteirinhaToolStripMenuItem_Click);
             // 
+            // lojasToolStripMenuItem
+            // 
+            this.lojasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lojaDeAçaíToolStripMenuItem});
+            this.lojasToolStripMenuItem.Name = "lojasToolStripMenuItem";
+            this.lojasToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.lojasToolStripMenuItem.Text = "Lojas";
+            // 
+            // lojaDeAçaíToolStripMenuItem
+            // 
+            this.lojaDeAçaíToolStripMenuItem.Name = "lojaDeAçaíToolStripMenuItem";
+            this.lojaDeAçaíToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lojaDeAçaíToolStripMenuItem.Text = "Loja de açaí";
+            this.lojaDeAçaíToolStripMenuItem.Click += new System.EventHandler(this.lojaDeAçaíToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,5 +132,7 @@
         private System.Windows.Forms.ToolStripMenuItem calculadoraDeAposentadoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem geradoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem geradorDeCarteirinhaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lojasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lojaDeAçaíToolStripMenuItem;
     }
 }
