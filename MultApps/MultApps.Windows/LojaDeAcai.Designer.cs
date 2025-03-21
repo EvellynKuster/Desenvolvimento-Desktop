@@ -39,90 +39,76 @@
             this.panel28 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.numericCaramelo = new System.Windows.Forms.NumericUpDown();
-            this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.numericChocolate = new System.Windows.Forms.NumericUpDown();
-            this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.numericLeiteConden = new System.Windows.Forms.NumericUpDown();
-            this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.numericMel = new System.Windows.Forms.NumericUpDown();
-            this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.numericCobMorango = new System.Windows.Forms.NumericUpDown();
             this.panel33 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.numericManga = new System.Windows.Forms.NumericUpDown();
-            this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.numericAbacaxi = new System.Windows.Forms.NumericUpDown();
             this.panel35 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.numericMorango = new System.Windows.Forms.NumericUpDown();
-            this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.numericKiwi = new System.Windows.Forms.NumericUpDown();
-            this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.numericUva = new System.Windows.Forms.NumericUpDown();
-            this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.numericLimao = new System.Windows.Forms.NumericUpDown();
-            this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.numericBanana = new System.Windows.Forms.NumericUpDown();
-            this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.numericCoco = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.numericChocobol = new System.Windows.Forms.NumericUpDown();
-            this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.numericConfete = new System.Windows.Forms.NumericUpDown();
-            this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.numericAmendoim = new System.Windows.Forms.NumericUpDown();
-            this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.numericLeitePo = new System.Windows.Forms.NumericUpDown();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listPreco = new System.Windows.Forms.ListBox();
             this.listComplementos = new System.Windows.Forms.ListBox();
             this.listTamanho = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -131,7 +117,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.numericGranola = new System.Windows.Forms.NumericUpDown();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -159,6 +144,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.listFrutas = new System.Windows.Forms.ListBox();
+            this.listCoberturas = new System.Windows.Forms.ListBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -338,7 +327,6 @@
             this.panel28.BackColor = System.Drawing.Color.Wheat;
             this.panel28.Controls.Add(this.pictureBox12);
             this.panel28.Controls.Add(this.numericCaramelo);
-            this.panel28.Controls.Add(this.label42);
             this.panel28.Controls.Add(this.label43);
             this.panel28.Location = new System.Drawing.Point(798, 400);
             this.panel28.Name = "panel28";
@@ -363,25 +351,21 @@
             this.numericCaramelo.BackColor = System.Drawing.Color.FloralWhite;
             this.numericCaramelo.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericCaramelo.Location = new System.Drawing.Point(38, 121);
+            this.numericCaramelo.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericCaramelo.Name = "numericCaramelo";
             this.numericCaramelo.Size = new System.Drawing.Size(56, 20);
             this.numericCaramelo.TabIndex = 38;
             this.numericCaramelo.ValueChanged += new System.EventHandler(this.numericCaramelo_ValueChanged);
             // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(3, 103);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(52, 13);
-            this.label42.TabIndex = 4;
-            this.label42.Text = "R$ 3,00";
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(3, 79);
+            this.label43.Location = new System.Drawing.Point(3, 89);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(59, 13);
             this.label43.TabIndex = 23;
@@ -392,7 +376,6 @@
             this.panel29.BackColor = System.Drawing.Color.Wheat;
             this.panel29.Controls.Add(this.pictureBox13);
             this.panel29.Controls.Add(this.numericChocolate);
-            this.panel29.Controls.Add(this.label45);
             this.panel29.Controls.Add(this.label46);
             this.panel29.Location = new System.Drawing.Point(934, 249);
             this.panel29.Name = "panel29";
@@ -417,25 +400,21 @@
             this.numericChocolate.BackColor = System.Drawing.Color.FloralWhite;
             this.numericChocolate.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericChocolate.Location = new System.Drawing.Point(37, 119);
+            this.numericChocolate.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericChocolate.Name = "numericChocolate";
             this.numericChocolate.Size = new System.Drawing.Size(56, 20);
             this.numericChocolate.TabIndex = 36;
             this.numericChocolate.ValueChanged += new System.EventHandler(this.numericChocolate_ValueChanged);
             // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(3, 103);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(52, 13);
-            this.label45.TabIndex = 4;
-            this.label45.Text = "R$ 2,00";
-            // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(3, 79);
+            this.label46.Location = new System.Drawing.Point(3, 89);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(64, 13);
             this.label46.TabIndex = 23;
@@ -446,7 +425,6 @@
             this.panel30.BackColor = System.Drawing.Color.Wheat;
             this.panel30.Controls.Add(this.pictureBox15);
             this.panel30.Controls.Add(this.numericLeiteConden);
-            this.panel30.Controls.Add(this.label48);
             this.panel30.Controls.Add(this.label49);
             this.panel30.Location = new System.Drawing.Point(798, 249);
             this.panel30.Name = "panel30";
@@ -471,25 +449,21 @@
             this.numericLeiteConden.BackColor = System.Drawing.Color.FloralWhite;
             this.numericLeiteConden.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericLeiteConden.Location = new System.Drawing.Point(38, 119);
+            this.numericLeiteConden.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericLeiteConden.Name = "numericLeiteConden";
             this.numericLeiteConden.Size = new System.Drawing.Size(56, 20);
             this.numericLeiteConden.TabIndex = 39;
             this.numericLeiteConden.ValueChanged += new System.EventHandler(this.numericLeiteConden_ValueChanged);
             // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(3, 103);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(52, 13);
-            this.label48.TabIndex = 4;
-            this.label48.Text = "R$ 2,00";
-            // 
             // label49
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(3, 79);
+            this.label49.Location = new System.Drawing.Point(3, 89);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(108, 13);
             this.label49.TabIndex = 23;
@@ -500,7 +474,6 @@
             this.panel31.BackColor = System.Drawing.Color.Wheat;
             this.panel31.Controls.Add(this.pictureBox14);
             this.panel31.Controls.Add(this.numericMel);
-            this.panel31.Controls.Add(this.label51);
             this.panel31.Controls.Add(this.label52);
             this.panel31.Location = new System.Drawing.Point(934, 98);
             this.panel31.Name = "panel31";
@@ -525,25 +498,21 @@
             this.numericMel.BackColor = System.Drawing.Color.FloralWhite;
             this.numericMel.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericMel.Location = new System.Drawing.Point(37, 118);
+            this.numericMel.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericMel.Name = "numericMel";
             this.numericMel.Size = new System.Drawing.Size(56, 20);
             this.numericMel.TabIndex = 37;
             this.numericMel.ValueChanged += new System.EventHandler(this.numericMel_ValueChanged);
             // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(3, 102);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(52, 13);
-            this.label51.TabIndex = 4;
-            this.label51.Text = "R$ 3,00";
-            // 
             // label52
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(3, 79);
+            this.label52.Location = new System.Drawing.Point(3, 89);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(27, 13);
             this.label52.TabIndex = 23;
@@ -553,7 +522,6 @@
             // 
             this.panel32.BackColor = System.Drawing.Color.Wheat;
             this.panel32.Controls.Add(this.pictureBox16);
-            this.panel32.Controls.Add(this.label54);
             this.panel32.Controls.Add(this.label55);
             this.panel32.Controls.Add(this.numericCobMorango);
             this.panel32.Location = new System.Drawing.Point(798, 98);
@@ -574,20 +542,11 @@
             this.pictureBox16.TabIndex = 38;
             this.pictureBox16.TabStop = false;
             // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(3, 102);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(52, 13);
-            this.label54.TabIndex = 4;
-            this.label54.Text = "R$ 2,00";
-            // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(3, 79);
+            this.label55.Location = new System.Drawing.Point(3, 89);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(56, 13);
             this.label55.TabIndex = 23;
@@ -598,6 +557,11 @@
             this.numericCobMorango.BackColor = System.Drawing.Color.FloralWhite;
             this.numericCobMorango.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericCobMorango.Location = new System.Drawing.Point(38, 118);
+            this.numericCobMorango.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericCobMorango.Name = "numericCobMorango";
             this.numericCobMorango.Size = new System.Drawing.Size(56, 20);
             this.numericCobMorango.TabIndex = 34;
@@ -608,7 +572,6 @@
             this.panel33.BackColor = System.Drawing.Color.Wheat;
             this.panel33.Controls.Add(this.pictureBox5);
             this.panel33.Controls.Add(this.numericManga);
-            this.panel33.Controls.Add(this.label57);
             this.panel33.Controls.Add(this.label58);
             this.panel33.Location = new System.Drawing.Point(630, 400);
             this.panel33.Name = "panel33";
@@ -633,25 +596,21 @@
             this.numericManga.BackColor = System.Drawing.Color.FloralWhite;
             this.numericManga.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericManga.Location = new System.Drawing.Point(36, 121);
+            this.numericManga.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericManga.Name = "numericManga";
             this.numericManga.Size = new System.Drawing.Size(56, 20);
             this.numericManga.TabIndex = 41;
             this.numericManga.ValueChanged += new System.EventHandler(this.numericManga_ValueChanged);
             // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(6, 103);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(52, 13);
-            this.label57.TabIndex = 4;
-            this.label57.Text = "R$ 4,00";
-            // 
             // label58
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(3, 76);
+            this.label58.Location = new System.Drawing.Point(3, 89);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(45, 13);
             this.label58.TabIndex = 23;
@@ -661,7 +620,6 @@
             // 
             this.panel34.BackColor = System.Drawing.Color.Wheat;
             this.panel34.Controls.Add(this.pictureBox8);
-            this.panel34.Controls.Add(this.label60);
             this.panel34.Controls.Add(this.label61);
             this.panel34.Controls.Add(this.numericAbacaxi);
             this.panel34.Location = new System.Drawing.Point(494, 400);
@@ -682,20 +640,11 @@
             this.pictureBox8.TabIndex = 36;
             this.pictureBox8.TabStop = false;
             // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(3, 103);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(52, 13);
-            this.label60.TabIndex = 4;
-            this.label60.Text = "R$ 5,00";
-            // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(3, 79);
+            this.label61.Location = new System.Drawing.Point(3, 89);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(52, 13);
             this.label61.TabIndex = 23;
@@ -706,6 +655,11 @@
             this.numericAbacaxi.BackColor = System.Drawing.Color.FloralWhite;
             this.numericAbacaxi.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericAbacaxi.Location = new System.Drawing.Point(40, 121);
+            this.numericAbacaxi.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericAbacaxi.Name = "numericAbacaxi";
             this.numericAbacaxi.Size = new System.Drawing.Size(56, 20);
             this.numericAbacaxi.TabIndex = 36;
@@ -716,7 +670,6 @@
             this.panel35.BackColor = System.Drawing.Color.Wheat;
             this.panel35.Controls.Add(this.pictureBox6);
             this.panel35.Controls.Add(this.numericMorango);
-            this.panel35.Controls.Add(this.label63);
             this.panel35.Controls.Add(this.label64);
             this.panel35.Location = new System.Drawing.Point(629, 249);
             this.panel35.Name = "panel35";
@@ -741,25 +694,21 @@
             this.numericMorango.BackColor = System.Drawing.Color.FloralWhite;
             this.numericMorango.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericMorango.Location = new System.Drawing.Point(37, 119);
+            this.numericMorango.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericMorango.Name = "numericMorango";
             this.numericMorango.Size = new System.Drawing.Size(56, 20);
             this.numericMorango.TabIndex = 39;
             this.numericMorango.ValueChanged += new System.EventHandler(this.numericMorango_ValueChanged);
             // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(3, 103);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(52, 13);
-            this.label63.TabIndex = 4;
-            this.label63.Text = "R$ 3,00";
-            // 
             // label64
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(3, 79);
+            this.label64.Location = new System.Drawing.Point(4, 89);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(56, 13);
             this.label64.TabIndex = 23;
@@ -770,7 +719,6 @@
             this.panel36.BackColor = System.Drawing.Color.Wheat;
             this.panel36.Controls.Add(this.pictureBox9);
             this.panel36.Controls.Add(this.numericKiwi);
-            this.panel36.Controls.Add(this.label66);
             this.panel36.Controls.Add(this.label67);
             this.panel36.Location = new System.Drawing.Point(493, 249);
             this.panel36.Name = "panel36";
@@ -795,25 +743,21 @@
             this.numericKiwi.BackColor = System.Drawing.Color.FloralWhite;
             this.numericKiwi.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericKiwi.Location = new System.Drawing.Point(41, 119);
+            this.numericKiwi.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericKiwi.Name = "numericKiwi";
             this.numericKiwi.Size = new System.Drawing.Size(56, 20);
             this.numericKiwi.TabIndex = 40;
             this.numericKiwi.ValueChanged += new System.EventHandler(this.numericKiwi_ValueChanged);
             // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(3, 105);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(52, 13);
-            this.label66.TabIndex = 4;
-            this.label66.Text = "R$ 2,00";
-            // 
             // label67
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(3, 79);
+            this.label67.Location = new System.Drawing.Point(4, 89);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(30, 13);
             this.label67.TabIndex = 23;
@@ -824,7 +768,6 @@
             this.panel37.BackColor = System.Drawing.Color.Wheat;
             this.panel37.Controls.Add(this.pictureBox7);
             this.panel37.Controls.Add(this.numericUva);
-            this.panel37.Controls.Add(this.label69);
             this.panel37.Controls.Add(this.label70);
             this.panel37.Location = new System.Drawing.Point(630, 98);
             this.panel37.Name = "panel37";
@@ -849,25 +792,21 @@
             this.numericUva.BackColor = System.Drawing.Color.FloralWhite;
             this.numericUva.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericUva.Location = new System.Drawing.Point(39, 118);
+            this.numericUva.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUva.Name = "numericUva";
             this.numericUva.Size = new System.Drawing.Size(56, 20);
             this.numericUva.TabIndex = 34;
             this.numericUva.ValueChanged += new System.EventHandler(this.numericUva_ValueChanged);
             // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(3, 102);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(52, 13);
-            this.label69.TabIndex = 4;
-            this.label69.Text = "R$ 2,00";
-            // 
             // label70
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(3, 79);
+            this.label70.Location = new System.Drawing.Point(2, 89);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(30, 13);
             this.label70.TabIndex = 23;
@@ -878,7 +817,6 @@
             this.panel27.BackColor = System.Drawing.Color.Wheat;
             this.panel27.Controls.Add(this.pictureBox11);
             this.panel27.Controls.Add(this.numericLimao);
-            this.panel27.Controls.Add(this.label39);
             this.panel27.Controls.Add(this.label40);
             this.panel27.Location = new System.Drawing.Point(934, 400);
             this.panel27.Name = "panel27";
@@ -903,25 +841,21 @@
             this.numericLimao.BackColor = System.Drawing.Color.FloralWhite;
             this.numericLimao.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericLimao.Location = new System.Drawing.Point(37, 121);
+            this.numericLimao.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericLimao.Name = "numericLimao";
             this.numericLimao.Size = new System.Drawing.Size(56, 20);
             this.numericLimao.TabIndex = 35;
             this.numericLimao.ValueChanged += new System.EventHandler(this.numericLimao_ValueChanged);
             // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(3, 103);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(52, 13);
-            this.label39.TabIndex = 4;
-            this.label39.Text = "R$ 2,00";
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(3, 79);
+            this.label40.Location = new System.Drawing.Point(0, 89);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(40, 13);
             this.label40.TabIndex = 23;
@@ -932,7 +866,6 @@
             this.panel17.BackColor = System.Drawing.Color.Wheat;
             this.panel17.Controls.Add(this.pictureBox10);
             this.panel17.Controls.Add(this.numericBanana);
-            this.panel17.Controls.Add(this.label36);
             this.panel17.Controls.Add(this.label37);
             this.panel17.Location = new System.Drawing.Point(494, 98);
             this.panel17.Name = "panel17";
@@ -957,25 +890,21 @@
             this.numericBanana.BackColor = System.Drawing.Color.FloralWhite;
             this.numericBanana.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericBanana.Location = new System.Drawing.Point(43, 118);
+            this.numericBanana.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericBanana.Name = "numericBanana";
             this.numericBanana.Size = new System.Drawing.Size(56, 20);
             this.numericBanana.TabIndex = 35;
             this.numericBanana.ValueChanged += new System.EventHandler(this.numericBanana_ValueChanged);
             // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(3, 102);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(52, 13);
-            this.label36.TabIndex = 4;
-            this.label36.Text = "R$ 2,00";
-            // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(3, 79);
+            this.label37.Location = new System.Drawing.Point(3, 89);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(50, 13);
             this.label37.TabIndex = 23;
@@ -985,7 +914,6 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Wheat;
             this.panel8.Controls.Add(this.pictureBox19);
-            this.panel8.Controls.Add(this.label27);
             this.panel8.Controls.Add(this.numericCoco);
             this.panel8.Controls.Add(this.label28);
             this.panel8.Location = new System.Drawing.Point(320, 400);
@@ -1006,20 +934,16 @@
             this.pictureBox19.TabIndex = 33;
             this.pictureBox19.TabStop = false;
             // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(3, 103);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(52, 13);
-            this.label27.TabIndex = 4;
-            this.label27.Text = "R$ 5,00";
-            // 
             // numericCoco
             // 
             this.numericCoco.BackColor = System.Drawing.Color.FloralWhite;
             this.numericCoco.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericCoco.Location = new System.Drawing.Point(39, 121);
+            this.numericCoco.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericCoco.Name = "numericCoco";
             this.numericCoco.Size = new System.Drawing.Size(56, 20);
             this.numericCoco.TabIndex = 43;
@@ -1029,7 +953,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(3, 79);
+            this.label28.Location = new System.Drawing.Point(3, 89);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(75, 13);
             this.label28.TabIndex = 23;
@@ -1040,7 +964,6 @@
             this.panel10.BackColor = System.Drawing.Color.Wheat;
             this.panel10.Controls.Add(this.pictureBox21);
             this.panel10.Controls.Add(this.numericChocobol);
-            this.panel10.Controls.Add(this.label30);
             this.panel10.Controls.Add(this.label31);
             this.panel10.Location = new System.Drawing.Point(320, 249);
             this.panel10.Name = "panel10";
@@ -1065,25 +988,21 @@
             this.numericChocobol.BackColor = System.Drawing.Color.FloralWhite;
             this.numericChocobol.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericChocobol.Location = new System.Drawing.Point(39, 119);
+            this.numericChocobol.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericChocobol.Name = "numericChocobol";
             this.numericChocobol.Size = new System.Drawing.Size(56, 20);
             this.numericChocobol.TabIndex = 42;
             this.numericChocobol.ValueChanged += new System.EventHandler(this.numericChocobol_ValueChanged);
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 103);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(52, 13);
-            this.label30.TabIndex = 4;
-            this.label30.Text = "R$ 3,00";
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(3, 79);
+            this.label31.Location = new System.Drawing.Point(3, 89);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(60, 13);
             this.label31.TabIndex = 23;
@@ -1094,7 +1013,6 @@
             this.panel11.BackColor = System.Drawing.Color.Wheat;
             this.panel11.Controls.Add(this.pictureBox17);
             this.panel11.Controls.Add(this.numericConfete);
-            this.panel11.Controls.Add(this.label33);
             this.panel11.Controls.Add(this.label34);
             this.panel11.Location = new System.Drawing.Point(184, 249);
             this.panel11.Name = "panel11";
@@ -1117,25 +1035,21 @@
             this.numericConfete.BackColor = System.Drawing.Color.FloralWhite;
             this.numericConfete.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericConfete.Location = new System.Drawing.Point(37, 119);
+            this.numericConfete.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericConfete.Name = "numericConfete";
             this.numericConfete.Size = new System.Drawing.Size(56, 20);
             this.numericConfete.TabIndex = 44;
             this.numericConfete.ValueChanged += new System.EventHandler(this.numericConfete_ValueChanged);
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(3, 103);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(52, 13);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "R$ 2,00";
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(3, 79);
+            this.label34.Location = new System.Drawing.Point(4, 89);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(50, 13);
             this.label34.TabIndex = 23;
@@ -1146,7 +1060,6 @@
             this.panel7.BackColor = System.Drawing.Color.Wheat;
             this.panel7.Controls.Add(this.pictureBox20);
             this.panel7.Controls.Add(this.numericAmendoim);
-            this.panel7.Controls.Add(this.label24);
             this.panel7.Controls.Add(this.label25);
             this.panel7.Location = new System.Drawing.Point(184, 400);
             this.panel7.Name = "panel7";
@@ -1171,25 +1084,21 @@
             this.numericAmendoim.BackColor = System.Drawing.Color.FloralWhite;
             this.numericAmendoim.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericAmendoim.Location = new System.Drawing.Point(37, 121);
+            this.numericAmendoim.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericAmendoim.Name = "numericAmendoim";
             this.numericAmendoim.Size = new System.Drawing.Size(56, 20);
             this.numericAmendoim.TabIndex = 33;
             this.numericAmendoim.ValueChanged += new System.EventHandler(this.numericAmendoim_ValueChanged);
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 103);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(52, 13);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "R$ 3,00";
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(3, 79);
+            this.label25.Location = new System.Drawing.Point(4, 89);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(64, 13);
             this.label25.TabIndex = 23;
@@ -1199,7 +1108,6 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.Wheat;
             this.panel9.Controls.Add(this.pictureBox22);
-            this.panel9.Controls.Add(this.label21);
             this.panel9.Controls.Add(this.label22);
             this.panel9.Controls.Add(this.numericLeitePo);
             this.panel9.Location = new System.Drawing.Point(320, 98);
@@ -1220,20 +1128,11 @@
             this.pictureBox22.TabIndex = 36;
             this.pictureBox22.TabStop = false;
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(3, 102);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(52, 13);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "R$ 5,00";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(3, 79);
+            this.label22.Location = new System.Drawing.Point(3, 89);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(73, 13);
             this.label22.TabIndex = 23;
@@ -1244,6 +1143,11 @@
             this.numericLeitePo.BackColor = System.Drawing.Color.FloralWhite;
             this.numericLeitePo.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericLeitePo.Location = new System.Drawing.Point(39, 118);
+            this.numericLeitePo.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericLeitePo.Name = "numericLeitePo";
             this.numericLeitePo.Size = new System.Drawing.Size(56, 20);
             this.numericLeitePo.TabIndex = 37;
@@ -1261,6 +1165,13 @@
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.Wheat;
+            this.panel26.Controls.Add(this.label21);
+            this.panel26.Controls.Add(this.label18);
+            this.panel26.Controls.Add(this.listCoberturas);
+            this.panel26.Controls.Add(this.listFrutas);
+            this.panel26.Controls.Add(this.label20);
+            this.panel26.Controls.Add(this.label3);
+            this.panel26.Controls.Add(this.listPreco);
             this.panel26.Controls.Add(this.listComplementos);
             this.panel26.Controls.Add(this.listTamanho);
             this.panel26.Controls.Add(this.label8);
@@ -1269,13 +1180,44 @@
             this.panel26.Size = new System.Drawing.Size(237, 721);
             this.panel26.TabIndex = 23;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label20.Location = new System.Drawing.Point(3, 637);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 24);
+            this.label20.TabIndex = 37;
+            this.label20.Text = "Preço";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label3.Location = new System.Drawing.Point(3, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(150, 24);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Complementos";
+            // 
+            // listPreco
+            // 
+            this.listPreco.BackColor = System.Drawing.Color.Wheat;
+            this.listPreco.FormattingEnabled = true;
+            this.listPreco.Location = new System.Drawing.Point(7, 664);
+            this.listPreco.Name = "listPreco";
+            this.listPreco.Size = new System.Drawing.Size(227, 43);
+            this.listPreco.TabIndex = 35;
+            // 
             // listComplementos
             // 
             this.listComplementos.BackColor = System.Drawing.Color.Wheat;
             this.listComplementos.FormattingEnabled = true;
-            this.listComplementos.Location = new System.Drawing.Point(7, 105);
+            this.listComplementos.Location = new System.Drawing.Point(7, 131);
             this.listComplementos.Name = "listComplementos";
-            this.listComplementos.Size = new System.Drawing.Size(227, 602);
+            this.listComplementos.Size = new System.Drawing.Size(227, 121);
             this.listComplementos.TabIndex = 25;
             // 
             // listTamanho
@@ -1335,7 +1277,6 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.Wheat;
             this.panel12.Controls.Add(this.pictureBox18);
-            this.panel12.Controls.Add(this.label18);
             this.panel12.Controls.Add(this.label17);
             this.panel12.Controls.Add(this.numericGranola);
             this.panel12.Location = new System.Drawing.Point(184, 98);
@@ -1354,20 +1295,11 @@
             this.pictureBox18.TabIndex = 34;
             this.pictureBox18.TabStop = false;
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(3, 102);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(52, 13);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "R$ 3,00";
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(4, 79);
+            this.label17.Location = new System.Drawing.Point(3, 89);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(51, 13);
             this.label17.TabIndex = 23;
@@ -1378,6 +1310,11 @@
             this.numericGranola.BackColor = System.Drawing.Color.FloralWhite;
             this.numericGranola.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.numericGranola.Location = new System.Drawing.Point(37, 118);
+            this.numericGranola.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericGranola.Name = "numericGranola";
             this.numericGranola.Size = new System.Drawing.Size(56, 20);
             this.numericGranola.TabIndex = 38;
@@ -1650,6 +1587,46 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Informe seu nome:";
             // 
+            // listFrutas
+            // 
+            this.listFrutas.BackColor = System.Drawing.Color.Wheat;
+            this.listFrutas.FormattingEnabled = true;
+            this.listFrutas.Location = new System.Drawing.Point(5, 300);
+            this.listFrutas.Name = "listFrutas";
+            this.listFrutas.Size = new System.Drawing.Size(227, 121);
+            this.listFrutas.TabIndex = 38;
+            // 
+            // listCoberturas
+            // 
+            this.listCoberturas.BackColor = System.Drawing.Color.Wheat;
+            this.listCoberturas.FormattingEnabled = true;
+            this.listCoberturas.Location = new System.Drawing.Point(7, 476);
+            this.listCoberturas.Name = "listCoberturas";
+            this.listCoberturas.Size = new System.Drawing.Size(227, 121);
+            this.listCoberturas.TabIndex = 39;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label18.Location = new System.Drawing.Point(3, 273);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(68, 24);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Frutas";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label21.Location = new System.Drawing.Point(3, 449);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(107, 24);
+            this.label21.TabIndex = 41;
+            this.label21.Text = "Coberuras";
+            // 
             // LojaDeAcai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1790,59 +1767,41 @@
         private System.Windows.Forms.Button btnSelecionarFamilia;
         private System.Windows.Forms.Button btnSelecionarGrande;
         private System.Windows.Forms.Button btnSelecionarMedio;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.NumericUpDown numericManga;
         private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.NumericUpDown numericAbacaxi;
         private System.Windows.Forms.NumericUpDown numericCoco;
@@ -1890,5 +1849,12 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnSenha;
+        private System.Windows.Forms.ListBox listPreco;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ListBox listCoberturas;
+        private System.Windows.Forms.ListBox listFrutas;
     }
 }
