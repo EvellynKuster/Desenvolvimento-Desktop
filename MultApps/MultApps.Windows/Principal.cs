@@ -43,5 +43,12 @@ namespace MultApps.Windows
             form.MdiParent = this;
             form.Show();
         }
+
+        private void lojaDeAçaíToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new LojaDeAcai();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

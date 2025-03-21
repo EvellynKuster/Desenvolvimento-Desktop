@@ -72,6 +72,12 @@
       <DependentUpon>FrmCalculadoraIMC.cs</DependentUpon>
     </Compile>
     <Compile Include="ImcImagem.cs" />
+    <Compile Include="LojaDeAcai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LojaDeAcai.Designer.cs">
+      <DependentUpon>LojaDeAcai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <EmbeddedResource Include="FrmCalculadoraIMC.resx">
       <DependentUpon>FrmCalculadoraIMC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LojaDeAcai.resx">
+      <DependentUpon>LojaDeAcai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
@@ -125,6 +135,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\criativoAcai-664b47269328aimg-2024-05-20664b47269328c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\criativoAcai-664b47269328aimg-2024-05-20664b47269328c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__83190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__4999.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__upload__70828.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__90650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__upload__708281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__upload__708282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__2831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-view-fresh-brown-coconuts-with-coconut-powder-black-surface.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-banana-fruit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 201014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 201107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 201321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 201155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 201552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 202139.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 202322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 202452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 202240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 202555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-19 202008.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
