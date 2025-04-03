@@ -4,7 +4,7 @@ USE multapps_dev;
 CREATE TABLE IF NOT EXISTS  categoria(
 	id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(250) NOT NULL,
-    data_criacao TIMESTAMP NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     data_alteracao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     status ENUM ('inativo', 'ativo', 'excluido') NOT NULL,
     
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS  produto(
     nome VARCHAR(250) NOT NULL,
     preco DECIMAL NOT NULL,
     quantidade_estoque INT NOT NULL,
-    data_criacao TIMESTAMP NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     data_alteracao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     status ENUM ('inativo', 'ativo', 'excluido') NOT NULL,
     
