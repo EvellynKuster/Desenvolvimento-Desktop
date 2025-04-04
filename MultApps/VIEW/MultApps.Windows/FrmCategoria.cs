@@ -18,6 +18,7 @@ namespace MultApps.Windows
         public FrmCategoria()
         {
             InitializeComponent();
+            CarregarTodasCategorias();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -38,6 +39,53 @@ namespace MultApps.Windows
                 MessageBox.Show("Erro ao cadastrar categoria");
             }
 
+            CarregarTodasCategorias();
+        }
+
+        private void CarregarTodasCategorias()
+        {
+            var categoriaRepository = new CategoriaRepository();
+            var listaDeCategorias = categoriaRepository.ListarTodasCategorias();
+
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "Id",
+                HeaderText = "Id",  
+            }
+            );
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "Nome",
+                HeaderText = "Nome da categoria",
+            }
+            );
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "DataCadastro",
+                HeaderText = "Data de cadastro",
+            }
+            );
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "DataAlteracao",
+                HeaderText = "Data de Alteração",
+            }
+            );
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "Status",
+                HeaderText = "Status",
+            }
+            );
+
+            dataGridView1.DataSource = listaDeCategorias;
         }
     }
 }
