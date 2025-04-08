@@ -42,6 +42,7 @@
             this.groupBoxCadastrarCategoria = new System.Windows.Forms.GroupBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.groupBoxCadastrarCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -153,6 +154,7 @@
             // groupBoxCadastrarCategoria
             // 
             this.groupBoxCadastrarCategoria.BackColor = System.Drawing.Color.Wheat;
+            this.groupBoxCadastrarCategoria.Controls.Add(this.btnLimpar);
             this.groupBoxCadastrarCategoria.Controls.Add(this.btnSalvar);
             this.groupBoxCadastrarCategoria.Controls.Add(this.txtDataAlteracao);
             this.groupBoxCadastrarCategoria.Controls.Add(this.cmbStatus);
@@ -193,6 +195,17 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 235);
             this.dataGridView1.TabIndex = 15;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnLimpar.ForeColor = System.Drawing.Color.FloralWhite;
+            this.btnLimpar.Location = new System.Drawing.Point(479, 93);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(95, 30);
+            this.btnLimpar.TabIndex = 16;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            // 
             // FrmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,5 +241,6 @@
         private System.Windows.Forms.GroupBox groupBoxCadastrarCategoria;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

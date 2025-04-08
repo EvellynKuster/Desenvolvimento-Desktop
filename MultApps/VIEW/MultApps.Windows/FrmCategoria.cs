@@ -87,5 +87,43 @@ namespace MultApps.Windows
 
             dataGridView1.DataSource = listaDeCategorias;
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                MessageBox.Show($"Houve um erro ao clicar duas vezes sobre o grid");
+                return;
+            }
+
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+            var categoriaId = (int)row.Cells[0].Value;
+
+            var categoriaRepository = new CategoriaRepository();
+            var categoria = categoriaRepository.MostrarCategoriaPorId(2);
+
+            if (categoria == null)
+            {
+                MessageBox.Show($"Categoria: #{categoriaId} não encontrada");
+                return;
+            }
+
+            txtId.Text = categoria.Id.ToString();
+            txtNome.Text = categoria.Nome;
+            cmbStatus.SelectedIndex = (int)categoria.Status;
+            txtDataCriacao.Text = categoria.DataCriacao.ToString("dd/MM/yyyy HH:mm");
+            txtDataAlteracao.Text = categoria.DataAlteracao.ToString("dd/MM/yyyy HH:mm");
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtId.Text = string.Empty;
+            txtNome.Text = string.Empty;
+            txtDataCriacao.Text = string.Empty;
+            txtDataAlteracao.Text = string.Empty;
+            cmbStatus.SelectedIndex = -1;
+        }
     }
 }
+

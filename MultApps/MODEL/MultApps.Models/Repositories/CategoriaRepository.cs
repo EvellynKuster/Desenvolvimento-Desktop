@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,6 +38,20 @@ namespace MultApps.Models.Repositories
             {
                 var comandoSql = @"SELECT * FROM categoria";
                 var resultado = db.Query<Categoria>(comandoSql).ToList();
+                return resultado;
+            }
+        }
+
+        public Categoria MostrarCategoriaPorId(int id)
+        {
+            using (IDbConnection db = new MySqlConnection(ConnectionString))
+            {
+                var comandoSql = @"SELECT * FROM categoria WHERE id = @Id";
+
+                var parametros = new DynamicParameters();
+                parametros.Add("@Id", id);
+
+                var resultado = db.Query<Categoria>(comandoSql, parametros).FirstOrDefault();
                 return resultado;
             }
         }
