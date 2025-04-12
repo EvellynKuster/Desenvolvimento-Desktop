@@ -40,9 +40,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.groupBoxCadastrarCategoria = new System.Windows.Forms.GroupBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.groupBoxCadastrarCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -154,7 +155,7 @@
             // groupBoxCadastrarCategoria
             // 
             this.groupBoxCadastrarCategoria.BackColor = System.Drawing.Color.Wheat;
-            this.groupBoxCadastrarCategoria.Controls.Add(this.btnLimpar);
+            this.groupBoxCadastrarCategoria.Controls.Add(this.btnDeletar);
             this.groupBoxCadastrarCategoria.Controls.Add(this.btnSalvar);
             this.groupBoxCadastrarCategoria.Controls.Add(this.txtDataAlteracao);
             this.groupBoxCadastrarCategoria.Controls.Add(this.cmbStatus);
@@ -173,6 +174,18 @@
             this.groupBoxCadastrarCategoria.TabIndex = 14;
             this.groupBoxCadastrarCategoria.TabStop = false;
             this.groupBoxCadastrarCategoria.Text = "Cadastrar nova categoria";
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Wheat;
+            this.btnLimpar.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnLimpar.Location = new System.Drawing.Point(693, 21);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(95, 30);
+            this.btnLimpar.TabIndex = 16;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSalvar
             // 
@@ -194,17 +207,20 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 235);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
-            // btnLimpar
+            // btnDeletar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnLimpar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnLimpar.Location = new System.Drawing.Point(479, 93);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(95, 30);
-            this.btnLimpar.TabIndex = 16;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnDeletar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnDeletar.Enabled = false;
+            this.btnDeletar.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnDeletar.Location = new System.Drawing.Point(515, 93);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(95, 30);
+            this.btnDeletar.TabIndex = 17;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // FrmCategoria
             // 
@@ -213,6 +229,7 @@
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.groupBoxCadastrarCategoria);
             this.Controls.Add(this.label1);
             this.Name = "FrmCategoria";
@@ -242,5 +259,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }
