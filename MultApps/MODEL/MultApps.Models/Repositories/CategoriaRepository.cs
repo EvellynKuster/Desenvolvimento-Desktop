@@ -66,7 +66,7 @@ namespace MultApps.Models.Repositories
                 var parametros = new DynamicParameters();
                 parametros.Add("@Id", categoria.Id);
                 parametros.Add("@Nome", categoria.Nome);
-                parametros.Add("@Status", categoria.Status);
+                parametros.Add("@Status", categoria.Status.ToString().ToLower());
 
                 var resposta = db.Execute(comandoSql, parametros);
 

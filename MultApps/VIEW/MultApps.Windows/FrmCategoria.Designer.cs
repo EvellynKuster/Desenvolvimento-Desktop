@@ -40,10 +40,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.groupBoxCadastrarCategoria = new System.Windows.Forms.GroupBox();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDeletar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBoxCadastrarCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -145,8 +145,7 @@
             this.cmbStatus.FormattingEnabled = true;
             this.cmbStatus.Items.AddRange(new object[] {
             "Inativo",
-            "Ativo",
-            "Excluído"});
+            "Ativo"});
             this.cmbStatus.Location = new System.Drawing.Point(590, 51);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(121, 27);
@@ -175,17 +174,18 @@
             this.groupBoxCadastrarCategoria.TabStop = false;
             this.groupBoxCadastrarCategoria.Text = "Cadastrar nova categoria";
             // 
-            // btnLimpar
+            // btnDeletar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Wheat;
-            this.btnLimpar.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnLimpar.Location = new System.Drawing.Point(693, 21);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(95, 30);
-            this.btnLimpar.TabIndex = 16;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnDeletar.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnDeletar.Enabled = false;
+            this.btnDeletar.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnDeletar.Location = new System.Drawing.Point(515, 93);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(95, 30);
+            this.btnDeletar.TabIndex = 17;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnSalvar
             // 
@@ -199,6 +199,18 @@
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Wheat;
+            this.btnLimpar.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnLimpar.Location = new System.Drawing.Point(693, 21);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(95, 30);
+            this.btnLimpar.TabIndex = 16;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Wheat;
@@ -208,19 +220,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 235);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // btnDeletar
-            // 
-            this.btnDeletar.BackColor = System.Drawing.Color.FloralWhite;
-            this.btnDeletar.Enabled = false;
-            this.btnDeletar.ForeColor = System.Drawing.Color.Goldenrod;
-            this.btnDeletar.Location = new System.Drawing.Point(515, 93);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(95, 30);
-            this.btnDeletar.TabIndex = 17;
-            this.btnDeletar.Text = "Deletar";
-            this.btnDeletar.UseVisualStyleBackColor = false;
-            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // FrmCategoria
             // 

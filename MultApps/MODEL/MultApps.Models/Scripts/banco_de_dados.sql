@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS  categoria(
     PRIMARY KEY(id)
 );
 
+
 CREATE TABLE IF NOT EXISTS  produto(
 	id INT NOT NULL AUTO_INCREMENT,
 	categoria_id INT NOT NULL,
@@ -23,4 +24,17 @@ CREATE TABLE IF NOT EXISTS  produto(
     
     PRIMARY KEY(id),
     FOREIGN KEY (categoria_id) REFERENCES categoria(id)
+);
+
+CREATE TABLE IF NOT EXISTS  usuario(
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(250) NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
+    email VARCHAR(250) NOT NULL,
+    senha VARCHAR(50) NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    data_ultimo_acesso TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    status ENUM ('inativo', 'ativo', 'excluido') NOT NULL,
+    
+    PRIMARY KEY(id)
 );
