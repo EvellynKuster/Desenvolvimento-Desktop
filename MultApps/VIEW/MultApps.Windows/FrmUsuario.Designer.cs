@@ -31,6 +31,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.groupBoxCadastrarCategoria = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnDeletar = new System.Windows.Forms.Button();
@@ -49,8 +51,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbFiltro = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -65,6 +65,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(538, 369);
             this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // btnLimpar
             // 
@@ -76,6 +77,7 @@
             this.btnLimpar.TabIndex = 20;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // groupBoxCadastrarCategoria
             // 
@@ -107,6 +109,23 @@
             this.groupBoxCadastrarCategoria.TabStop = false;
             this.groupBoxCadastrarCategoria.Text = "Cadastrar novo usuário";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(261, 181);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 19);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Senha";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(261, 203);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(153, 26);
+            this.txtSenha.TabIndex = 22;
+            // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
@@ -135,6 +154,7 @@
             this.btnDeletar.TabIndex = 17;
             this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnSalvar
             // 
@@ -147,6 +167,7 @@
             this.btnSalvar.TabIndex = 14;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblCpf
             // 
@@ -171,8 +192,7 @@
             this.cmbStatus.FormattingEnabled = true;
             this.cmbStatus.Items.AddRange(new object[] {
             "Inativo",
-            "Ativo",
-            "Excluído"});
+            "Ativo"});
             this.cmbStatus.Location = new System.Drawing.Point(261, 123);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(153, 27);
@@ -284,23 +304,6 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Seja bem vindo!";
             // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(261, 203);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(153, 26);
-            this.txtSenha.TabIndex = 22;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(261, 181);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 19);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Senha";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -325,6 +328,7 @@
             this.cmbFiltro.Size = new System.Drawing.Size(153, 29);
             this.cmbFiltro.TabIndex = 24;
             this.cmbFiltro.Text = "Filtro";
+            this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.cmbFiltro_SelectedIndexChanged);
             // 
             // FrmUsuario
             // 

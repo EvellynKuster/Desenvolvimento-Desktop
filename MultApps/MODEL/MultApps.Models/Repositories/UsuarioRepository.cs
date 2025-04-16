@@ -23,7 +23,7 @@ namespace MultApps.Models.Repositories
 
                 var parametros = new DynamicParameters();
                 parametros.Add("@Nome", usuario.Nome);
-                parametros.Add("@Status", usuario.Status.ToString());
+                parametros.Add("@Status", usuario.Status.ToString().ToLower());
                 parametros.Add("@Cpf", usuario.Cpf.ToString());
                 parametros.Add("@Email", usuario.Email.ToString());
                 parametros.Add("@Senha", usuario.Senha.ToString());
@@ -90,6 +90,38 @@ namespace MultApps.Models.Repositories
 
                 var resultado = db.Execute(comandoSql, parametros);
                 return resultado > 0;
+            }
+        }
+
+        public List<Usuario> RetornarTodos()
+        {
+            using (IDbConnection db = new MySqlConnection(ConnectionString))
+            {
+                var comandoSql = @"SELECT * FROM usuario";
+                var resultado = db.Query<Usuario>(comandoSql).ToList();
+                return resultado;
+            }
+        }
+
+        public List<Usuario> RetornarInativos()
+        {
+            using (IDbConnection db = new MySqlConnection(ConnectionString))
+            {
+                var comandoSql = @"SELECT * FROM usuario
+                                    WHERE status = 'inativo'";
+                var resultado = db.Query<Usuario>(comandoSql).ToList();
+                return resultado;
+            }
+        }
+
+        public List<Usuario> RetornarAtivos()
+        {
+            using (IDbConnection db = new MySqlConnection(ConnectionString))
+            {
+                var comandoSql = @"SELECT * FROM usuario
+                                    WHERE status = 'ativo'";
+                var resultado = db.Query<Usuario>(comandoSql).ToList();
+                return resultado;
             }
         }
 

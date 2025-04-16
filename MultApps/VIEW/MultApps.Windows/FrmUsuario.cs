@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace MultApps.Windows
         public FrmUsuario()
         {
             InitializeComponent();
+            CarregarTodosUsuarios();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -25,6 +27,9 @@ namespace MultApps.Windows
             var usuario = new Usuario();
             usuario.Nome = txtNome.Text;
             usuario.Status = (StatusEnum)cmbStatus.SelectedIndex;
+            usuario.Cpf = maskedCpf.Text;
+            usuario.Email = txtEmail.Text;
+            usuario.Senha = txtSenha.Text;
 
             var usuarioRepository = new UsuarioRepository();
 
@@ -149,23 +154,26 @@ namespace MultApps.Windows
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
 
             // Obtenha o ID da categoria da linha selecionada
-            var categoriaId = (int)row.Cells[0].Value;
+            var usuarioId = (int)row.Cells[0].Value;
 
             // Use o método ObterCategoriaPorId para buscar os dados da categoria no banco de dados
-            var categoriaRepository = new CategoriaRepository();
-            var categoria = categoriaRepository.MostrarCategoriaPorId(categoriaId);
+            var usuarioRepository = new UsuarioRepository();
+            var usuario = usuarioRepository.MostrarUsuarioPorId(usuarioId);
 
-            if (categoria == null)
+            if (usuario == null)
             {
-                MessageBox.Show($"Categoria: #{categoriaId} não encontrada");
+                MessageBox.Show($"Usuario: #{usuarioId} não encontrado");
                 return;
             }
             // Preencha os campos de edição com os dados obtidos
-            txtId.Text = categoria.Id.ToString();
-            txtNome.Text = categoria.Nome;
-            cmbStatus.SelectedIndex = (int)categoria.Status;
-            txtDataCriacao.Text = categoria.DataCriacao.ToString("dd/MM/yyyy HH:mm");
-            txtDataAlteracao.Text = categoria.DataAlteracao.ToString("dd/MM/yyyy HH:mm");
+            txtId.Text = usuario.Id.ToString();
+            txtNome.Text = usuario.Nome;
+            cmbStatus.SelectedIndex = (int)usuario.Status;
+            txtDataCriacao.Text = usuario.DataCriacao.ToString("dd/MM/yyyy HH:mm");
+            txtDataAlteracao.Text = usuario.DataAcesso.ToString("dd/MM/yyyy HH:mm");
+            txtEmail.Text = usuario.Email.ToString();
+            txtSenha.Text = usuario.Senha.ToString();
+            maskedCpf.Text = usuario.Cpf.ToString();     
 
             btnDeletar.Enabled = true;
             btnSalvar.Text = "Salvar alterações";
@@ -201,6 +209,26 @@ namespace MultApps.Windows
 
             btnDeletar.Enabled = false;
             btnLimpar_Click(sender, e);
+        }
+
+        private void cmbFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StatusEnum filtroSelecionado = (StatusEnum)Enum.Parse(typeof(StatusEnum), cmbFiltro.SelectedItem.ToString());
+
+            if (filtroSelecionado == StatusEnum.Todos)
+            {
+               
+            }
+
+            if (filtroSelecionado == StatusEnum.Ativo)
+            {
+                
+            }
+
+            if (filtroSelecionado == StatusEnum.Inativo)
+            {
+                
+            }
         }
 
     }
