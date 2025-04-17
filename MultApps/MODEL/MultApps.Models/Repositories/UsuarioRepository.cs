@@ -34,6 +34,18 @@ namespace MultApps.Models.Repositories
             }
         }
 
+        public bool EmailExistente(string email)
+        {
+            using (IDbConnection db = new MySqlConnection(ConnectionString))
+            {
+                var comandoSql = @"SELECT COUNT(*) FROM usuario WHERE email = @Email";
+                var parametros = new DynamicParameters();
+                parametros.Add("@Email", email);
+                var resultado = db.ExecuteScalar<int>(comandoSql, parametros);
+                return resultado > 0;
+            }
+        }
+
         public List<Usuario> ListarTodosUsuarios()
         {
             using (IDbConnection db = new MySqlConnection(ConnectionString))

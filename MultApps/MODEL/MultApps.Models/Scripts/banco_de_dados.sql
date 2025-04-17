@@ -29,12 +29,13 @@ CREATE TABLE IF NOT EXISTS  produto(
 CREATE TABLE IF NOT EXISTS  usuario(
 	id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(250) NOT NULL,
-    cpf VARCHAR(11) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
     email VARCHAR(250) NOT NULL,
     senha VARCHAR(50) NOT NULL,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    data_ultimo_acesso TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    status ENUM ('inativo', 'ativo', 'excluido') NOT NULL,
+    data_alteracao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    data_ultimo_acesso DATETIME,
+    status ENUM ('inativo', 'ativo') NOT NULL,
     
     PRIMARY KEY(id)
 );

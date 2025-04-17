@@ -63,7 +63,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(491, 294);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(538, 369);
+            this.dataGridView1.Size = new System.Drawing.Size(538, 262);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -71,7 +71,7 @@
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnLimpar.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnLimpar.Location = new System.Drawing.Point(208, 537);
+            this.btnLimpar.Location = new System.Drawing.Point(204, 438);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(95, 30);
             this.btnLimpar.TabIndex = 20;
@@ -104,7 +104,7 @@
             this.groupBoxCadastrarCategoria.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCadastrarCategoria.Location = new System.Drawing.Point(12, 59);
             this.groupBoxCadastrarCategoria.Name = "groupBoxCadastrarCategoria";
-            this.groupBoxCadastrarCategoria.Size = new System.Drawing.Size(463, 604);
+            this.groupBoxCadastrarCategoria.Size = new System.Drawing.Size(463, 497);
             this.groupBoxCadastrarCategoria.TabIndex = 18;
             this.groupBoxCadastrarCategoria.TabStop = false;
             this.groupBoxCadastrarCategoria.Text = "Cadastrar novo usuário";
@@ -113,7 +113,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(261, 181);
+            this.label8.Location = new System.Drawing.Point(38, 259);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 19);
             this.label8.TabIndex = 23;
@@ -121,10 +121,12 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(261, 203);
+            this.txtSenha.Location = new System.Drawing.Point(38, 281);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(153, 26);
             this.txtSenha.TabIndex = 22;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // lblEmail
             // 
@@ -140,7 +142,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(38, 203);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(153, 26);
+            this.txtEmail.Size = new System.Drawing.Size(376, 26);
             this.txtEmail.TabIndex = 20;
             // 
             // btnDeletar
@@ -148,7 +150,7 @@
             this.btnDeletar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnDeletar.Enabled = false;
             this.btnDeletar.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnDeletar.Location = new System.Drawing.Point(96, 537);
+            this.btnDeletar.Location = new System.Drawing.Point(92, 438);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(95, 30);
             this.btnDeletar.TabIndex = 17;
@@ -161,7 +163,7 @@
             this.btnSalvar.BackColor = System.Drawing.Color.Goldenrod;
             this.btnSalvar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnSalvar.Location = new System.Drawing.Point(319, 527);
+            this.btnSalvar.Location = new System.Drawing.Point(315, 428);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(95, 40);
             this.btnSalvar.TabIndex = 14;
@@ -182,7 +184,7 @@
             // maskedCpf
             // 
             this.maskedCpf.Location = new System.Drawing.Point(261, 52);
-            this.maskedCpf.Mask = "000.000.000-00";
+            this.maskedCpf.Mask = "000,000,000-00";
             this.maskedCpf.Name = "maskedCpf";
             this.maskedCpf.Size = new System.Drawing.Size(153, 26);
             this.maskedCpf.TabIndex = 18;
@@ -193,7 +195,7 @@
             this.cmbStatus.Items.AddRange(new object[] {
             "Inativo",
             "Ativo"});
-            this.cmbStatus.Location = new System.Drawing.Point(261, 123);
+            this.cmbStatus.Location = new System.Drawing.Point(261, 280);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(153, 27);
             this.cmbStatus.TabIndex = 13;
@@ -201,7 +203,7 @@
             // txtDataAlteracao
             // 
             this.txtDataAlteracao.Enabled = false;
-            this.txtDataAlteracao.Location = new System.Drawing.Point(265, 282);
+            this.txtDataAlteracao.Location = new System.Drawing.Point(265, 366);
             this.txtDataAlteracao.Name = "txtDataAlteracao";
             this.txtDataAlteracao.Size = new System.Drawing.Size(149, 26);
             this.txtDataAlteracao.TabIndex = 8;
@@ -221,7 +223,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(38, 123);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(153, 26);
+            this.txtNome.Size = new System.Drawing.Size(376, 26);
             this.txtNome.TabIndex = 12;
             // 
             // txtId
@@ -246,7 +248,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(261, 101);
+            this.label3.Location = new System.Drawing.Point(261, 258);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 19);
             this.label3.TabIndex = 3;
@@ -255,7 +257,7 @@
             // txtDataCriacao
             // 
             this.txtDataCriacao.Enabled = false;
-            this.txtDataCriacao.Location = new System.Drawing.Point(38, 282);
+            this.txtDataCriacao.Location = new System.Drawing.Point(38, 366);
             this.txtDataCriacao.Name = "txtDataCriacao";
             this.txtDataCriacao.Size = new System.Drawing.Size(153, 26);
             this.txtDataCriacao.TabIndex = 10;
@@ -265,7 +267,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label5.Location = new System.Drawing.Point(261, 260);
+            this.label5.Location = new System.Drawing.Point(261, 344);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 19);
             this.label5.TabIndex = 7;
@@ -276,11 +278,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label6.Location = new System.Drawing.Point(34, 260);
+            this.label6.Location = new System.Drawing.Point(34, 344);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 19);
+            this.label6.Size = new System.Drawing.Size(113, 19);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Data de criação";
+            this.label6.Text = "Data de cadastro";
             // 
             // label1
             // 
@@ -319,10 +321,6 @@
             // 
             this.cmbFiltro.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFiltro.FormattingEnabled = true;
-            this.cmbFiltro.Items.AddRange(new object[] {
-            "Inativo",
-            "Ativo",
-            "Todos"});
             this.cmbFiltro.Location = new System.Drawing.Point(876, 271);
             this.cmbFiltro.Name = "cmbFiltro";
             this.cmbFiltro.Size = new System.Drawing.Size(153, 29);
@@ -335,7 +333,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1041, 675);
+            this.ClientSize = new System.Drawing.Size(1041, 568);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
